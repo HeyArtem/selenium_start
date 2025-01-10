@@ -34,6 +34,17 @@ chmod +x /Users/heyartem/PycharmProjects/selenium_start/chromedriver/chromedrive
 
 
 pip freeze > requirements.txt
+touch .gitignore
+git init
+git add .
+git commit -m "initial
+...
+git push -u origin main
+
+
+
+
+
 
 
 - - - sources - - -
