@@ -1,0 +1,45 @@
+mkdir selenium_start
+cd selenium_start
+python3 -m venv venv
+source venv/bin/activate
+
+brew update        # Обновляет информацию о доступных пакетах
+brew upgrade       # Обновляет установленные пакеты
+brew cleanup       # Удаляет старые версии пакетов аналогичен sudo apt autoremove && sudo apt autoclean.
+	просто используй brew update && brew upgrade
+
+pip install -U pip setuptools selenium
+touch main.py
+
+open -a "PyCharm" . -Открыть текущую папку в PyCharm
+	open -a "PyCharm" /путь/к/проекту -Открыть PyCharm с конкретной папкой
+	open -a "PyCharm" ~/selenium_start
+
+	open -a "/Applications/PyCharm CE.app" .
+
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version -Проверить текущую версию Chrome
+
+скачать ChromeDriver in /Users/heyartem/PycharmProjects/selenium_start/chromedriver
+https://sites.google.com/chromium.org/driver/downloads
+https://googlechromelabs.github.io/chrome-for-testing/
+
+cd chromedriver
+unzip chromedriver-mac-arm64.zip
+
+удалить лишнее из папки, оставить только chromedriver (архивы нафиг)
+	/Users/heyartem/PycharmProjects/selenium_start/chromedriver
+
+команда chmod +x сделает файл исполняемым (чтобы его можно было запускать как программу)
+chmod +x /Users/heyartem/PycharmProjects/selenium_start/chromedriver/chromedriver
+
+
+pip freeze > requirements.txt
+
+
+- - - sources - - -
+Документация selenium
+https://selenium-python.readthedocs.io/installation.html
+
+скачать ChromeDriver
+https://sites.google.com/chromium.org/driver/downloads
+https://googlechromelabs.github.io/chrome-for-testing/
